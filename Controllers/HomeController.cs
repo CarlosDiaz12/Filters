@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace Filters.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         // GET: Home
