@@ -88,6 +88,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\RangeErrorPage.html" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -101,6 +102,7 @@
     </Compile>
     <Compile Include="Infrastructure\CustomAuthAttribute.cs" />
     <Compile Include="Infrastructure\GoogleAuthAttribute.cs" />
+    <Compile Include="Infrastructure\RangeExceptionAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
