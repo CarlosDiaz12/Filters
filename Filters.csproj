@@ -100,6 +100,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\CustomActionAttribute.cs" />
     <Compile Include="Infrastructure\CustomAuthAttribute.cs" />
     <Compile Include="Infrastructure\GoogleAuthAttribute.cs" />
     <Compile Include="Infrastructure\RangeExceptionAttribute.cs" />
