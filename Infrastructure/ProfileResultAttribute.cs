@@ -7,10 +7,11 @@ using System.Web.Mvc;
 
 namespace Filters.Infrastructure
 {
-    public class ProfileActionAttribute : FilterAttribute, IActionFilter
+    public class ProfileResultAttribute: FilterAttribute, IResultFilter
     {
         private Stopwatch timer;
-        public void OnActionExecuted(ActionExecutedContext filterContext)
+
+        public void OnResultExecuted(ResultExecutedContext filterContext)
         {
             timer.Stop();
             if (filterContext.Exception == null)
@@ -19,7 +20,8 @@ namespace Filters.Infrastructure
                     Write(string.Format("<div>Action method elapsed time: {0:F6}</ div></br> ", timer.Elapsed.TotalSeconds));
             }
         }
-        public void OnActionExecuting(ActionExecutingContext filterContext)
+
+        public void OnResultExecuting(ResultExecutingContext filterContext)
         {
             timer = Stopwatch.StartNew();
         }

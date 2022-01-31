@@ -40,6 +40,8 @@ namespace Filters.Controllers
         // Adding a New Action
         // [CustomAction]
         [ProfileAction]
+        [ProfileResult]
+        [ProfileAll]
         public string FilterTest()
         {
             return "This is the FilterTest action";
