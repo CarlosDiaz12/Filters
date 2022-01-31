@@ -18,7 +18,7 @@ namespace Filters.Infrastructure
 
         public void OnActionExecuted(ActionExecutedContext filterContext)
         {
-            throw new NotImplementedException();
+
         }
 
     }
